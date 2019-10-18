@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>signup</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+<script src="php/registre.php"></script>
+<style type="text/css">
+.sub
+{
+    border: none;
+    width: 190px;
+    background: white !important;
+    color: #000;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.sub:hover
+{
+    color: #fff;
+    background-color: grey !important;
+}
+</style>
+</head>
+
+<body>
+    <form class="signup" method="POST" action="php/registre.php">
+        <h2 style="color: #fff;">Sign Up</h2>
+        <input type="text" name="nom" placeholder="First name" required><br><br>
+        <input type="text" name="prenom" placeholder="Last name" required><br><br>
+        <input type="text" name="adr" placeholder="Adresse" required><br><br>
+        <input type="Number" maxlength="8"  name="phone" placeholder="Phone Number" required><br><br>
+        <input type="text" name="username" placeholder="Username" required><br><br>
+        <input type="password" name="pass" placeholder="Password" required><br><br>    
+        <input type="password" name="passconf" placeholder="Confirm Password" required><br><br>   
+        <input type="text" name="email" placeholder="Email address" required><br><br>  
+        <button type="submit" class="sub">Sign Up</button>
+        <br><br>
+    </form>
+</body>
+</html>
